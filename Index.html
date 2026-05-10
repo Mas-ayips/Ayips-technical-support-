@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>AYIPS TECHNICAL SUPPORT</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.80)),
+        url('https://i.postimg.cc/FsnXc41h/36325403-desmumtz13.jpg');
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+      overflow-x: hidden;
+      transition: 0.4s;
+      font-family: sans-serif;
+    }
+
+    /* LIGHT MODE */
+    .light-mode {
+      background:
+        linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.82)),
+        url('https://i.postimg.cc/FsnXc41h/36325403-desmumtz13.jpg') !important;
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+      color: #111 !important;
+    }
+
+    .light-mode header {
+      background: rgba(255,255,255,0.85) !important;
+      border-color: #ddd !important;
+    }
+
+    .light-mode .glass {
+      background: rgba(255,255,255,0.72) !important;
+      color: black !important;
+    }
+
+    .light-mode p,
+    .light-mode .text-gray-300,
+    .light-mode .text-gray-400,
+    .light-mode .text-gray-500 {
+      color: #444 !important;
+    }
+
+    .light-mode footer {
+      color: #444 !important;
+      border-color: #ddd !important;
+    }
+
+    .light-mode nav a {
+      color: black;
+    }
+
+    /* ICON */
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      transition: 0.3s;
+    }
+
+    .light-mode .service-icon {
+      filter: brightness(0);
+    }
+
+    /* GLASS */
+    .glass {
+      background: rgba(0,0,0,0.60);
+      backdrop-filter: blur(12px);
+    }
+
+    /* TEXT */
+    .gradient-text {
+      background: linear-gradient(to right, #ff0000, #ff6666);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* GLOW */
+    .glow-red {
+      box-shadow: 0 0 30px rgba(255,0,0,0.35);
+    }
+
+    /* CARD */
+    .card-hover {
+      transition: 0.4s;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-10px) scale(1.02);
+      border-color: rgb(239 68 68);
+      box-shadow: 0 0 35px rgba(255,0,0,0.25);
+    }
+
+    /* MARQUEE */
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* BUTTON */
+    .mode-btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="text-white opacity-0 transition-all duration-1000" id="body">
+
+  <!-- PROMO -->
+  <div class="bg-red-600 text-white py-2 text-sm font-semibold marquee">
+    <span>
+      🔥 SERVICE KOMPUTER • INSTAL WINDOWS • CCTV • NETWORK • FAST RESPONSE • AYIPS TECHNICAL SUPPORT 🔥
+    </span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-black/70 border-b border-red-900">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <!-- LOGO -->
+      <div class="flex items-center gap-4">
+
+        <img
+          src="https://i.postimg.cc/259GGtkn/Chat-GPT-Image-8-Mei-2026-19-12-57.png"
+          alt="AYIPS Logo"
+          class="w-14 h-14 rounded-full border border-red-700 object-cover glow-red"
+        >
+
+        <div>
+          <h1 class="text-2xl font-black tracking-widest text-red-500">
+            AYIPS
+          </h1>
+
+          <p class="text-xs text-gray-400 tracking-[3px]">
+            TECHNICAL SUPPORT
+          </p>
+        </div>
+
+      </div>
+
+      <!-- MENU -->
+      <nav class="hidden md:flex gap-8 text-sm font-semibold">
+
+        <a href="#home" class="hover:text-red-500 transition">
+          Home
+        </a>
+
+        <a href="#services" class="hover:text-red-500 transition">
+          Services
+        </a>
+
+        <a href="#about" class="hover:text-red-500 transition">
+          About
+        </a>
+
+        <a href="#contact" class="hover:text-red-500 transition">
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section
+    id="home"
+    data-aos="zoom-in"
+    class="relative max-w-7xl mx-auto px-6 py-32 flex items-center justify-center text-center"
+  >
+
+    <div class="max-w-4xl glass rounded-[40px] p-10 border border-red-900">
+
+      <div class="inline-block px-4 py-2 rounded-full border border-red-700 bg-red-900/20 text-red-400 text-sm mb-6">
+        Professional Technical Service
+      </div>
+
+      <h2 class="text-5xl md:text-7xl font-black leading-tight">
+
+        AYIPS
+
+        <span class="gradient-text">
+          TECHNICAL
+        </span>
+
+        SUPPORT
+
+      </h2>
+
+      <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+        Solusi profesional untuk perbaikan komputer, instalasi software,
+        jaringan internet, dan pemasangan CCTV dengan pelayanan cepat,
+        modern, terpercaya, dan berkualitas premium.
+      </p>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+
+        <a
+          href="https://wa.me/6285766795914"
+          target="_blank"
+          class="px-8 py-4 rounded-2xl bg-red-600 hover:bg-red-700 transition font-semibold shadow-xl shadow-red-900/40"
+        >
+          Hubungi Sekarang
+        </a>
+
+        <a
+          href="#services"
+          class="px-8 py-4 rounded-2xl border border-red-600 hover:bg-red-900/20 transition font-semibold"
+        >
+          Lihat Layanan
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section
+    id="services"
+    data-aos="fade-up"
+    class="max-w-7xl mx-auto px-6 py-24"
+  >
+
+    <div class="text-center mb-16">
+
+      <h3 class="text-4xl md:text-5xl font-black">
+
+        Layanan
+
+        <span class="text-red-500">
+          Profesional
+        </span>
+
+      </h3>
+
+      <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
+        Kami menyediakan berbagai layanan IT modern dengan kualitas premium.
+      </p>
+
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- CARD 1 -->
+      <div
+        data-aos="flip-left"
+        class="glass border border-red-900 rounded-3xl p-8 card-hover"
+      >
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3406/3406949.png"
+          alt="Computer Icon"
+          class="service-icon mb-6"
+        />
+
+        <h4 class="text-2xl font-bold mb-4">
+          Perbaikan Komputer
+        </h4>
+
+        <p class="text-gray-300 mb-6">
+          Service laptop dan komputer profesional dengan penanganan cepat dan aman.
+        </p>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div
+        data-aos="flip-left"
+        data-aos-delay="200"
+        class="glass border border-red-900 rounded-3xl p-8 card-hover"
+      >
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1589/1589642.png"
+          alt="Software Icon"
+          class="service-icon mb-6"
+        />
+
+        <h4 class="text-2xl font-bold mb-4">
+          Instalasi Software
+        </h4>
+
+        <p class="text-gray-300 mb-6">
+          Instalasi Windows, Office, driver, dan software profesional lainnya.
+        </p>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div
+        data-aos="flip-left"
+        data-aos-delay="400"
+        class="glass border border-red-900 rounded-3xl p-8 card-hover"
+      >
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5388/5388754.png"
+          alt="CCTV Icon"
+          class="service-icon mb-6"
+        />
+
+        <h4 class="text-2xl font-bold mb-4">
+          Instalasi CCTV
+        </h4>
+
+        <p class="text-gray-300 mb-6">
+          Pemasangan CCTV rumah, toko, kantor, dan monitoring profesional.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DARK/LIGHT BUTTON -->
+  <button
+    onclick="toggleMode()"
+    class="mode-btn fixed bottom-6 right-6 z-50 px-5 py-3 rounded-2xl bg-red-600 hover:bg-red-700 text-white font-semibold shadow-2xl shadow-red-900/50 transition"
+  >
+    🌙 Dark
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-red-950 py-8 text-center text-gray-300 text-sm">
+
+    © 2026 AYIPS TECHNICAL SUPPORT — Modern Premium Technical Service
+
+  </footer>
+
+  <!-- AOS SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- MAIN SCRIPT -->
+  <script>
+
+    // OPEN ANIMATION
+    window.addEventListener("load", () => {
+      document.getElementById("body").classList.remove("opacity-0");
+    });
+
+    // DARK LIGHT
+    function toggleMode() {
+      document.body.classList.toggle("light-mode");
+
+      const btn = document.querySelector(".mode-btn");
+
+      if (document.body.classList.contains("light-mode")) {
+        btn.innerHTML = "☀️ Light";
+        localStorage.setItem("theme", "light");
+      } else {
+        btn.innerHTML = "🌙 Dark";
+        localStorage.setItem("theme", "dark");
+      }
+    }
+
+    // LOAD THEME
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light-mode");
+
+      window.addEventListener("load", () => {
+        document.querySelector(".mode-btn").innerHTML = "☀️ Light";
+      });
+    }
+
+    // INIT AOS
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+  </script>
+
+</body>
+        </html>
